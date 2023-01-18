@@ -7,7 +7,6 @@ import {
 	getAllReview,
 	deleteReviews,
 } from "../../actions/productAction";
-import { Link } from "react-router-dom";
 import { useAlert } from "react-alert";
 import DeleteIcon from "@material-ui/icons/Delete";
 import StarIcon from "@material-ui/icons/Star";

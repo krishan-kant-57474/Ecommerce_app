@@ -40,7 +40,7 @@ const UpdateUser = ({ history, match }) => {
 			setEmail(user.email);
 			setRole(user.role);
 		}
-		if (user.name != name || user.role != role || user.email != email) {
+		if (user.name !== name || user.role !== role || user.email !== email) {
 			dispatch(getUserDetails(userId));
 		}
 		if (error) {
@@ -56,7 +56,19 @@ const UpdateUser = ({ history, match }) => {
 			history.push("/admin/dashboard");
 			dispatch({ type: UPDATE_USER_RESET });
 		}
-	}, [dispatch, alert, error, history, updateError, isUpdated, user, userId]);
+	}, [
+		dispatch,
+		alert,
+		error,
+		history,
+		updateError,
+		isUpdated,
+		user,
+		userId,
+		name,
+		email,
+		role,
+	]);
 
 	const updateUserSubmitHandler = (e) => {
 		e.preventDefault();
