@@ -9,9 +9,7 @@
 }
 
 .aboutSectionGradient {
-    background-image: linear-gradient(to bottom right,
-            rgb(78, 81, 255),
-            rgb(74, 137, 189));
+    background-image: url("https://images.unsplash.com/photo-1609955541579-c2e15b082af1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80")
 }
 
 .aboutSectionContainer {
@@ -80,7 +78,7 @@
 }
 
 .youtubeSvgIcon {
-    color: tomato;
+    color: #0077B7;
 }
 
 .instagramSvgIcon {
