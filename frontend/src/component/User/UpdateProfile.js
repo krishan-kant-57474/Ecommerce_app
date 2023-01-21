@@ -50,6 +50,9 @@ const UpdateProfile = ({ history }) => {
 			setAvatarPreview(user.avatar.url);
 		}
 
+		if (error == "Could not decode base64") {
+			alert.error("FILE SIZE IS SHOULD BE LESS THEN ONE MB");
+		}
 		if (error) {
 			alert.error(error);
 			dispatch(clearErrors());

@@ -10,7 +10,7 @@ const cloudinary = require("cloudinary");
 exports.registerUser = catchAsyncErrors(async (req, res, next) => {
 	const myCloud = await cloudinary.v2.uploader.upload(req.body.avatar, {
 		folder: "avatars",
-		width: 300,
+		// width: 300,
 		crop: "scale",
 	});
 
@@ -205,7 +205,7 @@ exports.updateProfile = catchAsyncErrors(async (req, res, next) => {
 
 		const myCloud = await cloudinary.v2.uploader.upload(req.body.avatar, {
 			folder: "avatars",
-			width: 300,
+			// width: 300,
 			crop: "scale",
 		});
 
